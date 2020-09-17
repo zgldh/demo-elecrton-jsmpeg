@@ -2,6 +2,9 @@
 
 This is a demo to setup an Electron Application to play RTSP video.
 
+![Sample](https://github.com/zgldh/zgldh.github.io/blob/master/pony.png)
+
+
 1. clone
 2. npm install
 3. Install ffmpeg. https://ffmpeg.org/download.html
