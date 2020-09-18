@@ -89,7 +89,7 @@ streamServer.listen(STREAM_PORT);
 console.log('Listening for incomming MPEG-TS Stream on http://127.0.0.1:' + STREAM_PORT + '/<secret>');
 console.log('Awaiting WebSocket connections on ws://127.0.0.1:' + WEBSOCKET_PORT + '/');
 
-const ffmpegCommand = `ffmpeg -i ${SOURCE_RTSP} \
+const ffmpegCommand = `ffmpeg -i "${SOURCE_RTSP}" \
  -max_muxing_queue_size 2048 \
  -f mpegts -codec:v mpeg1video -codec:a mp2 -b:v 1000k -bf 0 \
   http://localhost:${STREAM_PORT}/${STREAM_SECRET}`;
